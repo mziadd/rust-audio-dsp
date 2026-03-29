@@ -1,9 +1,24 @@
-# Audio DSP
+# Rust Audio DSP
 
-This project provides audio digital signal processing functions.
+A collection of audio DSP algorithms written in Rust.
 
-For more information on equalization, see the [Audio EQ Cookbook](https://www.audiocookbook.com/).
+## Resources
+
+- [Audio EQ Cookbook](http://www.symetric.com/eqc.pdf)
 
 ## Features
-- Feature 1
-- Feature 2
+
+- Simple and efficient audio processing algorithms.
+- Extensible and modular architecture.
+
+## Usage
+
+To use this library, add it to your `Cargo.toml`:
+```toml
+[dependencies]
+rust-audio-dsp = "*"
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
