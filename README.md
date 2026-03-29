@@ -1,24 +1,53 @@
-# Rust Audio DSP
+# Rust Audio DSP Processor
 
-A collection of audio DSP algorithms written in Rust.
+Real-time audio effects in the browser using Rust + WebAssembly.
 
-## Resources
+**[Live demo](https://mohammedx6.github.io/rust-audio-dsp/)**
 
-- [Audio EQ Cookbook](http://www.symetric.com/eqc.pdf)
+DSP formulas based on the [Audio EQ Cookbook](https://webaudio.github.io/Audio-EQ-Cookbook/audio-eq-cookbook.html).
 
-## Features
+---
 
-- Simple and efficient audio processing algorithms.
-- Extensible and modular architecture.
+## Effects
 
-## Usage
+- Gain
+- Low-pass / High-pass filters
+- Distortion
+- Delay / Echo
 
-To use this library, add it to your `Cargo.toml`:
-```toml
-[dependencies]
-rust-audio-dsp = "*"
+## Presets
+
+15 ready-made presets (Podcast, Radio, Robot, Cave, Stadium, Psychedelic, etc.) for quick testing.
+
+## Visuals
+
+Waveform, spectrum, bars, and circle views with live level meters and performance stats.
+
+---
+
+## Getting Started
+
+**Prerequisites:** Rust (via [rustup](https://rustup.rs/)), [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/), Node.js
+```bash
+git clone https://github.com/mohammedX6/rust-audio-dsp.git
+cd rust-audio-dsp
+npm install
+npm run build
+npm start
 ```
+
+Open http://localhost:8000
+
+---
+
+## Stack
+
+- Rust — DSP logic compiled to WebAssembly
+- Web Audio API — audio pipeline
+- Canvas — visualizations
+
+---
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT
